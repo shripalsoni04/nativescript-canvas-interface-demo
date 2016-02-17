@@ -1,0 +1,31 @@
+﻿.title {
+    font-size: 30;
+    horizontal-align: center;
+    margin: 20;
+}
+
+button {
+    font-size: 14;
+    horizontal-align: center;
+}
+
+.btn{
+    width: 160;
+    background-color: #4285F4;
+    color: #ffe;
+    margin: 4 0;
+}
+
+.btn-warning{
+    background-color: #ec971f;    
+}
+
+.btn-success{
+    background-color: #5cb85c;    
+}
+
+.message {
+    font-size: 20;
+    color: #284848;
+    horizontal-align: center;
+}

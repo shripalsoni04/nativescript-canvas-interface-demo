@@ -1,0 +1,5 @@
+var application = require("application");
+application.mainModule = "main-page";
+application.cssFile = "./app.css";
+application.start();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiYXBwLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLElBQUksV0FBVyxHQUFHLE9BQU8sQ0FBQyxhQUFhLENBQUMsQ0FBQztBQUN6QyxXQUFXLENBQUMsVUFBVSxHQUFHLFdBQVcsQ0FBQztBQUNyQyxXQUFXLENBQUMsT0FBTyxHQUFHLFdBQVcsQ0FBQztBQUNsQyxXQUFXLENBQUMsS0FBSyxFQUFFLENBQUMifQ==
