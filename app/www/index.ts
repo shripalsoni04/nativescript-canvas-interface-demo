@@ -73,7 +73,7 @@
      * Initializes canvas inteface for communication between canvas and native app.
      */
     function init() {
-        var canvasEle = <HTMLCanvasElement>document.getElementById('canvas');
+        var canvasEle = <HTMLCanvasElement>document.getElementById('canvasEle');
         if(window.NSCanvasInterface){
             var oCanvasInterface = new window.NSCanvasInterface(canvasEle);
             registerNSCanvasReqHandlers(oCanvasInterface);    

@@ -1,4 +1,7 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <Page.actionBar>
+    <ActionBar title="Nativescript Canvas Inteface Demo"/>
+  </Page.actionBar>
   <StackLayout>
     <WebView id="webView" src="~/www/index.html" visibility="collapse"></WebView>
     <GridLayout id="container" rows="auto" columns="*">
@@ -10,13 +13,14 @@
     </GridLayout>
     <GridLayout rows="auto, auto, auto, auto" columns="*, *" >
         <Button cssClass="btn" text="Vintage" id="vintage" tap="setPreset" />
-        <Button cssClass="btn" col="1" text="sunrise" id="sunrise" tap="setPreset" />
-        <Button cssClass="btn" row="1" col="0" text="cross Process" id="crossProcess" tap="setPreset" />
-        <Button cssClass="btn" row="1" col="1" text="grungy" id="grungy" tap="setPreset" />
-        <Button cssClass="btn" row="2" col="0" text="glowing Sun" id="glowingSun" tap="setPreset" />
-        <Button cssClass="btn" row="2" col="1" text="concentrate" id="concentrate" tap="setPreset" />
-        <Button cssClass="btn btn-warning" row="3" col="0" text="Reset" tap="resetImage" />
+        <Button cssClass="btn" col="1" text="Sunrise" id="sunrise" tap="setPreset" />
+        <Button cssClass="btn" row="1" col="0" text="Cross Process" id="crossProcess" tap="setPreset" />
+        <Button cssClass="btn" row="1" col="1" text="Grungy" id="grungy" tap="setPreset" />
+        <Button cssClass="btn" row="2" col="0" text="Glowing Sun" id="glowingSun" tap="setPreset" />
+        <Button cssClass="btn" row="2" col="1" text="Concentrate" id="concentrate" tap="setPreset" />
+        <!--<Button cssClass="btn btn-warning" row="3" col="0" text="Reset" tap="resetImage" />-->
         <!--<Button cssClass="btn btn-success" row="3" col="1" text="Download(WIP)" tap="downloadImage" />-->
     </GridLayout>
+    <Button cssClass="btn btn-warning" row="3" col="0" text="Reset" tap="resetImage" />
   </StackLayout>
 </Page>

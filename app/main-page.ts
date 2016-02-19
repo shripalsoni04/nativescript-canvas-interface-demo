@@ -2,7 +2,6 @@ import {Page, WebView, Image, GridLayout, ImageFormat} from 'ui';
 import {screen} from 'platform';
 import observableModule = require("data/observable");
 import {path, knownFolders} from 'file-system';
-var vmModule = require('./main-view-model');
 var _ = require('lodash');
 var nsCanvasInterfaceModule = require('nativescript-canvas-interface');
 var oNSCanvasInterface;
@@ -10,7 +9,7 @@ var imageView: Image;
 var page;
 
 /**
- * Function to be executed on Page Load. 
+ * Function to be executed on Page Load.  
  */
 export function pageLoaded(args) {
     page = <Page>args.object;
@@ -24,7 +23,7 @@ export function pageLoaded(args) {
  * Initializes canvas interface plugin and sets image to canvas, once webview is loaded.
  */
 function initCanvasInterface(webView: WebView) {
-    oNSCanvasInterface = new nsCanvasInterfaceModule.NativescriptCanvasInterface(webView, 'canvas');
+    oNSCanvasInterface = new nsCanvasInterfaceModule.NativescriptCanvasInterface(webView, 'canvasEle');
     webView.on('loadFinished', (args) => {
         if (!args.error) {
             var width = screen.mainScreen.widthDIPs;

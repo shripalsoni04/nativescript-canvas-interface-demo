@@ -1,0 +1,5 @@
+@import {url('~/common.css')};
+
+.btn{
+    width: 120;
+}
